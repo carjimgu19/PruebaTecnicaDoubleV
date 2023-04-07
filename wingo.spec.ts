@@ -302,6 +302,7 @@ test.describe('Colsulta de varios vuelos simultaneos', ()=> {
 
 
 /*
+// Función para priorizar una parte del proceso de consulta de los vuelos
 async function seleccionarVuelo(page: Page, date_1: string, date_2: string) {
     // create a new todo locator
     await page.locator('#selectPasj div').filter({ hasText: 'Pasajeros1 Pasajeros' }).locator('div').click();
