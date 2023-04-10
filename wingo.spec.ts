@@ -23,7 +23,8 @@ test.describe('Colsulta de un vuelo', ()=> {
         await page.getByText('Bogotá (BOG) El Dorado').click();
         await page.locator('#comboDestino').getByText('Cali (CLO) Alfonso Bonilla Aragón').click();
         // Fecha de Ida
-        await page.locator('table.month1').getByRole('row', { name: '3 4 5 6 7 8 9' }).getByText('9').click();
+        //await page.locator('table.month1').getByRole('row', { name: '3 4 5 6 7 8 9' }).getByText('9').click();
+        await page.locator('table.month1').getByRole('row', { name: '10 11 12 13 14 15 16' }).getByText('11').click();
         // Fecha de regreso
         await page.locator('table.month2').getByRole('row', { name: '15 16 17 18 19 20 21' }).getByText('21').click();
         const page1Promise = page.waitForEvent('popup');
@@ -101,7 +102,8 @@ test.describe('Colsulta de varios vuelos simultaneos', ()=> {
         await page.locator('.styledSelect').first().click();
         await page.getByText('Bogotá (BOG) El Dorado').click();
         await page.locator('#comboDestino').getByText('Cali (CLO) Alfonso Bonilla Aragón').click();
-        await page.locator('table.month1').getByRole('row', { name: '3 4 5 6 7 8 9' }).getByText('9').click();
+        //await page.locator('table.month1').getByRole('row', { name: '3 4 5 6 7 8 9' }).getByText('9').click();
+        await page.locator('table.month1').getByRole('row', { name: '10 11 12 13 14 15 16' }).getByText('11').click();
         await page.locator('table.month2').getByRole('row', { name: '15 16 17 18 19 20 21' }).getByText('21').click();
         const page1Promise = page.waitForEvent('popup');
         await page.getByText('Buscar vuelo').click();
@@ -238,7 +240,8 @@ test.describe('Colsulta de varios vuelos simultaneos', ()=> {
         await page.locator('.styledSelect').first().click();
         await page.getByText('Bogotá (BOG) El Dorado').click();
         await page.locator('#comboDestino').getByText('Cali (CLO) Alfonso Bonilla Aragón').click();
-        await page.locator('table.month1').getByRole('row', { name: '3 4 5 6 7 8 9' }).getByText('9').click();
+        //await page.locator('table.month1').getByRole('row', { name: '3 4 5 6 7 8 9' }).getByText('9').click();
+        await page.locator('table.month1').getByRole('row', { name: '10 11 12 13 14 15 16' }).getByText('11').click();
         await page.locator('table.month2').getByRole('row', { name: '15 16 17 18 19 20 21' }).getByText('21').click();
         const page1Promise = page.waitForEvent('popup');
         await page.getByText('Buscar vuelo').click();
